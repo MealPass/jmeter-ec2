@@ -673,7 +673,7 @@ function runsetup() {
           (scp -q -C -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no \
                                         -i "$PEM_PATH/$PEM_FILE" -P $REMOTE_PORT \
                                         $LOCAL_HOME/plugins/*.jar \
-                                        $USER@$host:$REMOTE_HOME/$JMETER_VERSION/lib/ext/) &
+                                        $USER@$host:$REMOTE_HOME/$JMETER_VERSION/lib/) &
       done
       wait
       echo -n "done...."
@@ -685,7 +685,7 @@ function runsetup() {
       for host in ${hosts[@]} ; do
           (scp -q -C -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no \
                                         -i "$PEM_PATH/$PEM_FILE" -P $REMOTE_PORT \
-                                        $project_home/plugins/*.jar \
+                                        $project_home/plugins/ext/*.jar \
                                         $USER@$host:$REMOTE_HOME/$JMETER_VERSION/lib/ext/) &
       done
       wait

@@ -11,7 +11,7 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
-      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables PROD" enabled="false">
         <collectionProp name="Arguments.arguments">
           <elementProp name="APP_ID" elementType="Argument">
             <stringProp name="Argument.name">APP_ID</stringProp>
@@ -23,6 +23,11 @@
             <stringProp name="Argument.value">e4Ej9jZNy3delnN3C31igIb98hUv8OASk0tOQngE</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="JAVASCRIPT_KEY" elementType="Argument">
+            <stringProp name="Argument.name">JAVASCRIPT_KEY</stringProp>
+            <stringProp name="Argument.value">JvLdrSwo8sOtWUTb2kveQcVgd1YrutPG27gY8m5c</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
           <elementProp name="PASSWORD" elementType="Argument">
             <stringProp name="Argument.name">PASSWORD</stringProp>
             <stringProp name="Argument.value">password-mealpass</stringProp>
@@ -30,7 +35,7 @@
           </elementProp>
           <elementProp name="CONFIG" elementType="Argument">
             <stringProp name="Argument.name">CONFIG</stringProp>
-            <stringProp name="Argument.value">&quot;_ApplicationId&quot;:&quot;FgoCWKvEYwLPyYUEdL5vOJwCnZLhhqkNKQOSklGH&quot;</stringProp>
+            <stringProp name="Argument.value"></stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="CITY_ID" elementType="Argument">
@@ -61,11 +66,66 @@
         </collectionProp>
       </Arguments>
       <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables QA" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="APP_ID" elementType="Argument">
+            <stringProp name="Argument.name">APP_ID</stringProp>
+            <stringProp name="Argument.value">CfUcOHA1QfHjeAQzBnuJqIOqbxNYlqblf2d5GqSe</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="MASTER_KEY" elementType="Argument">
+            <stringProp name="Argument.name">MASTER_KEY</stringProp>
+            <stringProp name="Argument.value">EY2kVsdNLoOd7Zdzu4JK9vLf6CKjUEWi1HBxgv0M</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="JAVASCRIPT_KEY" elementType="Argument">
+            <stringProp name="Argument.name">JAVASCRIPT_KEY</stringProp>
+            <stringProp name="Argument.value">euZMGdDnmOFmtI5UHkUPrQoI5FAu8DpCpXkiJbji</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="PASSWORD" elementType="Argument">
+            <stringProp name="Argument.name">PASSWORD</stringProp>
+            <stringProp name="Argument.value">password-mealpass</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="CONFIG" elementType="Argument">
+            <stringProp name="Argument.name">CONFIG</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="CITY_ID" elementType="Argument">
+            <stringProp name="Argument.name">CITY_ID</stringProp>
+            <stringProp name="Argument.value">00000000-1000-4000-9845-9344bdb9408c</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SCHEDULE_ID" elementType="Argument">
+            <stringProp name="Argument.name">SCHEDULE_ID</stringProp>
+            <stringProp name="Argument.value">00000000-1000-4000-9669-596306d666ac</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="MEAL_ID" elementType="Argument">
+            <stringProp name="Argument.name">MEAL_ID</stringProp>
+            <stringProp name="Argument.value">00000000-1000-4000-9658-a024bd738355</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="RESTAURANT_ID" elementType="Argument">
+            <stringProp name="Argument.name">RESTAURANT_ID</stringProp>
+            <stringProp name="Argument.value">00000000-1000-4000-9183-06850f88bcaa</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SESSION_TOKEN" elementType="Argument">
+            <stringProp name="Argument.name">SESSION_TOKEN</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
       <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
           <collectionProp name="Arguments.arguments"/>
         </elementProp>
-        <stringProp name="HTTPSampler.domain">api.mealpal.com/1</stringProp>
+        <stringProp name="HTTPSampler.domain">subscriber.mealpal.qa/1</stringProp>
         <stringProp name="HTTPSampler.port"></stringProp>
         <stringProp name="HTTPSampler.connect_timeout">300000</stringProp>
         <stringProp name="HTTPSampler.response_timeout">300000</stringProp>
@@ -92,8 +152,8 @@
             <stringProp name="Header.value">${SESSION_TOKEN}</stringProp>
           </elementProp>
           <elementProp name="" elementType="Header">
-            <stringProp name="Header.name">X-Parse-Master-Key</stringProp>
-            <stringProp name="Header.value">${MASTER_KEY}</stringProp>
+            <stringProp name="Header.name">X-Parse-Javascript-Key</stringProp>
+            <stringProp name="Header.value">${JAVASCRIPT_KEY}</stringProp>
           </elementProp>
         </collectionProp>
       </HeaderManager>
@@ -104,8 +164,8 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">5</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">5</stringProp>
+        <stringProp name="ThreadGroup.num_threads">500</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
         <longProp name="ThreadGroup.start_time">1475709357000</longProp>
         <longProp name="ThreadGroup.end_time">1475709357000</longProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
@@ -124,9 +184,20 @@
           <stringProp name="variableNames">USERNAME</stringProp>
         </CSVDataSet>
         <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Sample Schedules" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">/Users/yuriygoldman/src/jmeter-ec2/data/test_schedules.csv</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">SCHEDULE_ID</stringProp>
+        </CSVDataSet>
+        <hashTree/>
         <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
           <stringProp name="ConstantTimer.delay">0</stringProp>
-          <stringProp name="RandomTimer.range">1000.0</stringProp>
+          <stringProp name="RandomTimer.range">3000.0</stringProp>
         </UniformRandomTimer>
         <hashTree/>
         <RecordingController guiclass="RecordController" testclass="RecordingController" testname="Recording Controller" enabled="true"/>
@@ -137,7 +208,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{${CONFIG},&quot;username&quot;:&quot;${USERNAME}&quot;,&quot;password&quot;:&quot;${PASSWORD}&quot;,&quot;_method&quot;:&quot;GET&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;username&quot;:&quot;${USERNAME}&quot;,&quot;password&quot;:&quot;${PASSWORD}&quot;,&quot;_method&quot;:&quot;GET&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -166,6 +237,15 @@
               <stringProp name="SUBJECT">BODY</stringProp>
             </com.atlantbh.jmeter.plugins.jsonutils.jsonpathextractor.JSONPathExtractor>
             <hashTree/>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">X-Parse-Master-Key</stringProp>
+                  <stringProp name="Header.value">${MASTER_KEY}</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/functions/getCitiesWithNeighborhoods" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
@@ -173,7 +253,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{${CONFIG}}</stringProp>
+                  <stringProp name="Argument.value">{}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -200,7 +280,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{${CONFIG}, &quot;_SessionToken&quot;:&quot;${SESSION_TOKEN}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -227,7 +307,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{${CONFIG},&quot;_SessionToken&quot;:&quot;${SESSION_TOKEN}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -254,7 +334,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;ip&quot;:&quot;173.68.117.101&quot;,&quot;country_code&quot;:&quot;US&quot;,&quot;country_name&quot;:&quot;United States&quot;,&quot;region_code&quot;:&quot;NY&quot;,&quot;region_name&quot;:&quot;New York&quot;,&quot;city&quot;:&quot;Brooklyn&quot;,&quot;zip_code&quot;:&quot;11222&quot;,&quot;time_zone&quot;:&quot;America/New_York&quot;,&quot;latitude&quot;:40.728,&quot;longitude&quot;:-73.9453,&quot;metro_code&quot;:501,&quot;action&quot;:&quot;login&quot;,${CONFIG},&quot;_SessionToken&quot;:&quot;${SESSION_TOKEN}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;ip&quot;:&quot;173.68.117.101&quot;,&quot;country_code&quot;:&quot;US&quot;,&quot;country_name&quot;:&quot;United States&quot;,&quot;region_code&quot;:&quot;NY&quot;,&quot;region_name&quot;:&quot;New York&quot;,&quot;city&quot;:&quot;Brooklyn&quot;,&quot;zip_code&quot;:&quot;11222&quot;,&quot;time_zone&quot;:&quot;America/New_York&quot;,&quot;latitude&quot;:40.728,&quot;longitude&quot;:-73.9453,&quot;metro_code&quot;:501,&quot;action&quot;:&quot;login&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -281,7 +361,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{${CONFIG},&quot;_SessionToken&quot;:&quot;${SESSION_TOKEN}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -308,7 +388,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;cityId&quot;:&quot;i1tAmFFKJg&quot;,&quot;timezone&quot;:-4,&quot;test&quot;:{},${CONFIG},&quot;_SessionToken&quot;:&quot;${SESSION_TOKEN}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;cityId&quot;:&quot;i1tAmFFKJg&quot;,&quot;timezone&quot;:-4,&quot;test&quot;:{}}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -335,7 +415,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;onlyFavorites&quot;:false,&quot;text&quot;:&quot;&quot;,&quot;cities&quot;:[],&quot;cuisines&quot;:[],&quot;portions&quot;:[],&quot;vegetarian&quot;:false,&quot;neighborhoods&quot;:[],&quot;timezone&quot;:-4,&quot;cityId&quot;:&quot;i1tAmFFKJg&quot;,&quot;limit&quot;:100,&quot;skip&quot;:0,${CONFIG},&quot;_SessionToken&quot;:&quot;${SESSION_TOKEN}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;onlyFavorites&quot;:false,&quot;text&quot;:&quot;&quot;,&quot;cities&quot;:[],&quot;cuisines&quot;:[],&quot;portions&quot;:[],&quot;vegetarian&quot;:false,&quot;neighborhoods&quot;:[],&quot;timezone&quot;:-4,&quot;cityId&quot;:&quot;${CITY_ID}&quot;,&quot;limit&quot;:100,&quot;skip&quot;:0}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -356,13 +436,13 @@
             <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
           </HTTPSamplerProxy>
           <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/functions/reserveMeal2" enabled="false">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/functions/reserveMeal2" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;pickupTime&quot;:&quot;11:30am-11:45am&quot;,&quot;restaurant&quot;:&quot;${RESTAURANT_ID}&quot;,&quot;meal&quot;:&quot;${MEAL_ID}&quot;,&quot;schedule&quot;:&quot;${SCHEDULE_ID}&quot;,&quot;city&quot;:&quot;${CITY_ID}&quot;,&quot;source&quot;:&quot;Web&quot;,${CONFIG},&quot;_SessionToken&quot;:&quot;${SESSION_TOKEN}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;pickupTime&quot;:&quot;11:30am-11:45am&quot;,&quot;restaurant&quot;:&quot;${RESTAURANT_ID}&quot;,&quot;meal&quot;:&quot;${MEAL_ID}&quot;,&quot;schedule&quot;:&quot;${SCHEDULE_ID}&quot;,&quot;city&quot;:&quot;${CITY_ID}&quot;,&quot;source&quot;:&quot;Web&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -398,7 +478,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;comments&quot;:&quot;&quot;,&quot;notRated&quot;:false,&quot;portion&quot;:2,&quot;rating&quot;:3,&quot;reservationId&quot;:&quot;${RESERVATION_ID}&quot;,${CONFIG},&quot;_SessionToken&quot;:&quot;${SESSION_TOKEN}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;comments&quot;:&quot;&quot;,&quot;notRated&quot;:false,&quot;portion&quot;:2,&quot;rating&quot;:3,&quot;reservationId&quot;:&quot;${RESERVATION_ID}&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -419,13 +499,13 @@
             <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
           </HTTPSamplerProxy>
           <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/functions/cancelReservation" enabled="false">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/functions/cancelReservation" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;reservation&quot;:&quot;${RESERVATION_ID}&quot;,&quot;city&quot;:&quot;${CITY_ID}&quot;,${CONFIG},&quot;_SessionToken&quot;:&quot;${SESSION_TOKEN}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;reservation&quot;:&quot;${RESERVATION_ID}&quot;,&quot;city&quot;:&quot;${CITY_ID}&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -445,14 +525,30 @@
             <boolProp name="HTTPSampler.monitor">false</boolProp>
             <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
           </HTTPSamplerProxy>
-          <hashTree/>
+          <hashTree>
+            <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+              <stringProp name="filename"></stringProp>
+              <stringProp name="parameters"></stringProp>
+              <boolProp name="resetInterpreter">false</boolProp>
+              <stringProp name="script">if  (prev.getResponseCode().equals(&quot;404&quot;) == true || prev.getResponseCode().equals(&quot;400&quot;) == true) { 
+    prev.setResponseOK(); 
+
+    /* the same is 
+    prev.setSuccessful(true); 
+    prev.setResponseCodeOK(); 
+    prev.setResponseMessageOK(); 
+    */ 
+} </stringProp>
+            </BeanShellPostProcessor>
+            <hashTree/>
+          </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/functions/updateFavoriteRestaurants" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;restaurant&quot;:&quot;ZXsixKPp21&quot;,${CONFIG},&quot;_SessionToken&quot;:&quot;${SESSION_TOKEN}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;restaurant&quot;:&quot;${RESTAURANT_ID}&quot;}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -479,7 +575,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{&quot;id&quot;:[&quot;ZXsixKPp21&quot;],${CONFIG},&quot;_SessionToken&quot;:&quot;${SESSION_TOKEN}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{&quot;id&quot;:[&quot;${RESTAURANT_ID}&quot;]}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -506,7 +602,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{${CONFIG},&quot;_SessionToken&quot;:&quot;${SESSION_TOKEN}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -533,7 +629,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{${CONFIG},&quot;_SessionToken&quot;:&quot;${SESSION_TOKEN}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -560,7 +656,7 @@
               <collectionProp name="Arguments.arguments">
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                  <stringProp name="Argument.value">{${CONFIG},&quot;_SessionToken&quot;:&quot;${SESSION_TOKEN}&quot;}</stringProp>
+                  <stringProp name="Argument.value">{}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                 </elementProp>
               </collectionProp>
@@ -582,7 +678,7 @@
           </HTTPSamplerProxy>
           <hashTree/>
         </hashTree>
-        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+        <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
           <stringProp name="filename"></stringProp>
           <stringProp name="parameters"></stringProp>
           <boolProp name="resetInterpreter">false</boolProp>
@@ -629,7 +725,7 @@
             <idleTime>true</idleTime>
           </value>
         </objProp>
-        <stringProp name="filename">/Users/yuriygoldman/src/jmeter-ec2/results/mealpal-1478118698-complete.jtl</stringProp>
+        <stringProp name="filename">/Users/yuriygoldman/src/jmeter-ec2/results/mealpal-1481081644-complete.jtl</stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
@@ -666,7 +762,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">mealpal_results_tree.xml</stringProp>
+        <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="RespTimeGraphVisualizer" testclass="ResultCollector" testname="Response Time Graph" enabled="false">
